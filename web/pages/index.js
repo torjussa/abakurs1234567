@@ -7,10 +7,10 @@ const HomePage = (props) => {
 
   return (
     <div className="home">
-      <h1>Hei Trondheim</h1>
+      <h1>Hei Bestefar :)</h1>
       <div className="recipe-list">
         {recipes.map(recipe => 
-          <Recipe recipe={recipe}/>
+          <Recipe key={recipe._id} recipe={recipe}/>
           )}
       </div>
     </div>
